@@ -11,18 +11,33 @@ A webpage about Star Wars
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Star Wars</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Star Wars</h1>
-    <div>
-      <p>Everything you wanted to know about Star Wars and some stuff you didn't.</p>
-      <select>
+    <div class="bg">
+      <h1>Star Wars</h1>
+    </div>
+
+    <div class="panel">
+      <p>
+        There are 2 types of people out there:
+        <ul>
+         <li>those who love Star Wars, and</li>
+          <li>those who are wrong!</li> 
+        </ul> 
+      </p>
+      <p>
+        If you ever wanted a bit more info on your favourite characters, ships
+        etc., then you came to the right place. Choose your category below and May The Force Be With You!
+      </p>
+      <select name="category" id="category-list">
         <option>Choose Category</option>
       </select>
-      <input type="button" value="Click Me">
+      <input type="button" value="Click Me" />
     </div>
-    <div>
-      <img src="" alt="">
+    <div id="info-container" class="panel">
+      <p>This is where the requested info will be displayed.</p>
     </div>
   </body>
 </html>
+<script src="starwars.js"></script>
