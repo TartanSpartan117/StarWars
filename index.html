@@ -1,7 +1,7 @@
 <!--
 Author Rob Uhrig
 Date 21-June-2022
-A webpage about Star Wars
+A web page about Star Wars
 -->
 
 <!DOCTYPE html>
@@ -14,10 +14,15 @@ A webpage about Star Wars
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="bg">
-      <h1>Star Wars</h1>
-    </div>
+    <h1>Star Wars API</h1>
 
+    <div class="bg"><h1>Star Wars</h1></div>
+
+    <nav id="nav"></nav>
+    <main id="main"></main>
+    <footer id="footer"></footer>
+    <div class="overlay"><div class="loading">loading</div></div>
+    <!-- 
     <div class="panel">
       <p>
         There are 2 types of people out there:
@@ -25,19 +30,23 @@ A webpage about Star Wars
          <li>those who love Star Wars, and</li>
           <li>those who are wrong!</li> 
         </ul> 
-      </p>
+      </p><br>
       <p>
         If you ever wanted a bit more info on your favourite characters, ships
-        etc., then you came to the right place. Choose your category below and May The Force Be With You!
-      </p>
-      <select name="category" id="category-list">
+        etc., then you came to the right place. Choose your category from the navigation menu above and <br> May The Force Be With You!
+      </p> -->
+
+    <!--  <select name="category" id="category-list">
         <option>Choose Category</option>
       </select>
-      <input type="button" value="Click Me" />
+      <select name="specific" id="specific-list" *hidden* *disabled="disabled"*>
+        <option>Choose Specific</option>
+      </select>
+      <input type="button" value="Click Me" *hidden disabled*>
     </div>
-    <div id="info-container" class="panel">
+    <div id="info-container" class="panel" *hidden*>
       <p>This is where the requested info will be displayed.</p>
-    </div>
+    </div> -->
+    <script src="/js/starwars.js" defer></script>
   </body>
 </html>
-<script src="starwars.js"></script>
