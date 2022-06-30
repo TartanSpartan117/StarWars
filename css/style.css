@@ -30,10 +30,10 @@ footer {
   padding: 1rem 1rem;
   margin: 0 auto;
 }
-header h1 {
+h1 {
   color: yellow;
 }
-header h2 {
+h2 {
   color: orangered;
 }
 p {
@@ -49,6 +49,7 @@ p {
 #footer a {
   color: orangered;
   padding: 0.25rem 1rem;
+  text-transform: uppercase ;
 }
 .overlay {
   position: absolute;
