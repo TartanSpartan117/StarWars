@@ -4,19 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <title>Star Wars API Demo</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Star Wars</h1>
-    </header>
-    <div class="navPanel">
-      <!-- <nav id="nav"></nav> -->
-      Navigation panel
-    </div>
 
-    <div class="panel">
+    <style>
+      body {
+        background: url("./files/background 4.jpg") no-repeat center/cover;
+        height: 100vh;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+
+  <body class="container">
+    <header class="text-center pt-5">
+      <a href="https://swapi.dev/"></a>
+      <img src="./files/title.png" alt="Title Image" />
+    </header>
+
+     <div class="container">
+      <br />
       <p>There are two type of people out there:</p>
       <ol>
         <li>Those who love Star Wars, and</li>
@@ -24,16 +37,88 @@
       </ol>
       <p>
         If you ever wanted a bit more info on your favourite characters, ships
-        etc., then you came to the right place. Choose your category from the
-        buttons below and...
+        etc., then you came to the right place.
       </p>
+      <p>Choose your category from the buttons below and...</p>
+    </div>
+
+    <div class="a text-center">
       <h2>May The Force Be With You!</h2>
     </div>
 
-    <main id="main"></main>
-    <footer id="footer"></footer>
-    <div class="overlay"><div class="loading">loading</div></div>
-    <!--<script src="/js/starwars.js" defer></script>-->
-    <script src="/js/practice.js" defer></script>
+    <!--buttons for selection-->
+    <div id="buttons" class="text-center mb-5">
+      <div class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
+        <input
+          type="radio"
+          class="btn-check"
+          name="options"
+          id="films"
+          autocomplete="off"
+        />
+        <label class="btn btn-lg btn-outline-light" for="films">Films</label>
+      </div>
+
+      <div class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
+        <input
+          type="radio"
+          class="btn-check"
+          name="options"
+          id="people"
+          autocomplete="off"
+        />
+        <label class="btn btn-lg btn-outline-light" for="people">People</label>
+      </div>
+
+      <div class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
+        <input
+          type="radio"
+          class="btn-check"
+          name="options"
+          id="planets"
+          autocomplete="off"
+        />
+        <label class="btn btn-lg btn-outline-light" for="planets"
+          >Planets</label
+        >
+      </div>
+
+      <div class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
+        <input
+          type="radio"
+          class="btn-check"
+          name="options"
+          id="vehicles"
+          autocomplete="off"
+        />
+        <label class="btn btn-lg btn-outline-light" for="vehicles"
+          >Vehicles</label
+        >
+      </div>
+    </div>
+
+    <div id="results" class="card-columns"></div>
+
+    <!--javasript-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"
+      integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
