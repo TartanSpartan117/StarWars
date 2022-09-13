@@ -23,81 +23,50 @@
   </head>
 
   <body class="container">
+    <!--Titular graphics-->
     <header class="text-center pt-5">
       <a href="https://swapi.dev/"></a>
-      <img src="./files/title.png" alt="Title Image" />
-    </header>
-
-     <div class="container">
+      <img src="./files/title.png" alt="Title Image" /> <br /><br />
+      <img src="./files/MTFBWY.png" alt="MTFBWY pic" />
       <br />
-      <p>There are two type of people out there:</p>
-      <ol>
-        <li>Those who love Star Wars, and</li>
-        <li>Those who are wrong</li>
-      </ol>
-      <p>
-        If you ever wanted a bit more info on your favourite characters, ships
-        etc., then you came to the right place.
-      </p>
-      <p>Choose your category from the buttons below and...</p>
-    </div>
-
-    <div class="a text-center">
-      <h2>May The Force Be With You!</h2>
-    </div>
+    </header>
 
     <!--buttons for selection-->
     <div id="buttons" class="text-center mb-5">
       <div class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
-        <input
-          type="radio"
-          class="btn-check"
-          name="options"
-          id="films"
-          autocomplete="off"
-        />
+        <input type="radio" class="btn-check" name="options" id="films" />
         <label class="btn btn-lg btn-outline-light" for="films">Films</label>
       </div>
-
       <div class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
-        <input
-          type="radio"
-          class="btn-check"
-          name="options"
-          id="people"
-          autocomplete="off"
-        />
+        <input type="radio" class="btn-check" name="options" id="people" />
         <label class="btn btn-lg btn-outline-light" for="people">People</label>
       </div>
-
       <div class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
-        <input
-          type="radio"
-          class="btn-check"
-          name="options"
-          id="planets"
-          autocomplete="off"
-        />
+        <input type="radio" class="btn-check" name="options" id="planets" />
         <label class="btn btn-lg btn-outline-light" for="planets"
           >Planets</label
         >
       </div>
-
       <div class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
-        <input
-          type="radio"
-          class="btn-check"
-          name="options"
-          id="vehicles"
-          autocomplete="off"
-        />
+        <input type="radio" class="btn-check" name="options" id="starships" />
+        <label class="btn btn-lg btn-outline-light" for="starships"
+          >Starships</label
+        >
+      </div>
+      <div class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
+        <input type="radio" class="btn-check" name="options" id="vehicles" />
         <label class="btn btn-lg btn-outline-light" for="vehicles"
           >Vehicles</label
         >
       </div>
     </div>
 
-    <div id="results" class="card-columns"></div>
+    <!--Placeholder cards for results-->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div id="results" class="card-columns" style="width: 30rem"></div>
+      </div>
+    </div>
 
     <!--javasript-->
     <script
